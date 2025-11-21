@@ -1,0 +1,36 @@
+# E-commerce App
+
+This is a  E-commerce App built with Spring Boot, React.js, and MySQL.
+
+## Features
+
+1. **Admin can add product and categories**: The admin has the ability to add new products and categories.
+2. **User can browse and order**: User can order the products and track their order
+3. **User Registration**: Users can register in the application to create an account.
+4. **Delivery person can schedule delivery of products**:The delivery person can estimate the product delivery timeline.
+
+
+## Technologies Used
+
+- **Spring Boot**: Used for creating the backend of the application.
+- **React.js**: Used for building the user interface.
+- **MySQL**: Used as the database to store user and blog post data.
+
+## Setup and Installation
+
+1. Clone the repository.
+2. Install the necessary dependencies for Spring Boot and React.js.
+3. Set up your MySQL database and connect it with the application.
+4. Run the Spring Boot application.
+5. In a new terminal, navigate to the client directory and run the React.js application.
+
+## Usage
+
+After setting up the application, users can register and admins can add new blog posts. Admins can log in with client-side authentication.
+
+
+## Elasticsearch Search
+
+- Run `docker compose up -d` at repo root to start Elasticsearch & Kibana.
+- Start Spring Boot backend, then call `GET http://localhost:8080/api/search/reindex` once to index products.
+- Frontend `/search` page provides autocomplete, filters and facets.

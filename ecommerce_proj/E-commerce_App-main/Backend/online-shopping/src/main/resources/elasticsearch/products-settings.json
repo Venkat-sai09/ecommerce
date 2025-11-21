@@ -1,0 +1,30 @@
+{
+  "analysis": {
+    "normalizer": {
+      "lowercase_normalizer": {
+        "type": "custom",
+        "filter": [
+          "lowercase",
+          "asciifolding"
+        ]
+      }
+    },
+    "analyzer": {
+      "autocomplete": {
+        "tokenizer": "standard",
+        "filter": [
+          "lowercase",
+          "asciifolding",
+          "edge_ngram_filter"
+        ]
+      }
+    },
+    "filter": {
+      "edge_ngram_filter": {
+        "type": "edge_ngram",
+        "min_gram": 2,
+        "max_gram": 20
+      }
+    }
+  }
+}

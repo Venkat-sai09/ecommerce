@@ -1,0 +1,33 @@
+{
+  "properties": {
+    "title": {
+      "type": "text",
+      "analyzer": "english",
+      "search_analyzer": "english"
+    },
+    "description": {
+      "type": "text",
+      "analyzer": "english",
+      "search_analyzer": "english"
+    },
+    "brand": {
+      "type": "keyword",
+      "normalizer": "lowercase_normalizer"
+    },
+    "category": {
+      "type": "keyword"
+    },
+    "price": {
+      "type": "double"
+    },
+    "rating": {
+      "type": "integer"
+    },
+    "inStock": {
+      "type": "boolean"
+    },
+    "suggest": {
+      "type": "search_as_you_type"
+    }
+  }
+}
